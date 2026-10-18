@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arun Prasath · Principal DevOps Engineer</title>
+  <meta name="description" content="Arun Prasath is a Principal DevOps Engineer and Platform Engineering Lead building multi-tenant SaaS platforms on Kubernetes: identity, reliability, security and automation.">
+  <meta name="author" content="Arun Prasath">
+  <meta property="og:title" content="Arun Prasath · Principal DevOps Engineer">
+  <meta property="og:description" content="Platform engineering for multi-tenant SaaS: Kubernetes, identity, reliability, security and automation.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top">Arun Prasath</a>
+      <nav aria-label="Primary">
+        <a href="#focus">Focus</a>
+        <a href="#work">Selected work</a>
+        <a href="#experience">Experience</a>
+        <a href="#toolbox">Toolbox</a>
+        <a href="#github">GitHub</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="theme" class="icon-btn" type="button" aria-label="Toggle colour theme">
+        <span aria-hidden="true">◐</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" id="top">
+      <p class="eyebrow">Bengaluru, India</p>
+      <h1>Principal DevOps Engineer<br><span class="muted">leading platform engineering for multi-tenant SaaS.</span></h1>
+      <p class="lede">I build and run the platform layer that product teams ship on: Kubernetes at scale, identity, security, disaster recovery, infrastructure-as-code and cost. Seven-plus years in cloud infrastructure, currently leading a small platform team and mentoring two engineers.</p>
+      <p class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/asmarun" rel="me noopener">GitHub</a>
+        <a class="btn" id="email-btn" href="#contact">Email</a>
+      </p>
+
+      <dl class="stats" aria-label="Platform scale">
+        <div><dt>AKS clusters</dt><dd>11</dd></div>
+        <div><dt>Nodes</dt><dd>100+</dd></div>
+        <div><dt>Pods</dt><dd>10,000+</dd></div>
+        <div><dt>Products</dt><dd>3</dd></div>
+        <div><dt>Regions</dt><dd>2</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap" id="focus">
+      <h2>Where I go deep</h2>
+      <p class="section-lede">Five pillars I own end to end. Each one is something I've built, operated and improved, not just configured.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Kubernetes platform</h3>
+          <p>Operating a fleet of AKS clusters across products and regions, with phased, low-downtime version upgrades and incident response as the technical lead.</p>
+        </article>
+        <article class="card">
+          <h3>Identity &amp; security</h3>
+          <p>Keycloak-based centralised identity with OIDC and SAML federation, pen-test driven hardening, WAF, image scanning and dependency vulnerability management in CI.</p>
+        </article>
+        <article class="card">
+          <h3>Reliability &amp; DR</h3>
+          <p>Multi-region deployments, multi-tenant DR, distributed SQL (CockroachDB) in production, and observability with Datadog.</p>
+        </article>
+        <article class="card">
+          <h3>IaC &amp; automation</h3>
+          <p>Terraform with shared, reusable modules across products; Azure DevOps and GitHub Actions pipelines; repeatable environment provisioning for new clients.</p>
+        </article>
+        <article class="card">
+          <h3>Cost optimisation</h3>
+          <p>A recurring cost-review practice, utilisation-based right-sizing and storage and ingress redesign that reduced spend.</p>
+        </article>
+        <article class="card">
+          <h3>Governance</h3>
+          <p>Recurring RBAC and access reviews across cloud, source control, observability, code quality, Kubernetes and identity platforms, plus annual security audit cycles.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap" id="work">
+      <h2>Selected work</h2>
+      <p class="section-lede">Anonymised write-ups of platform problems I've solved. Employer products and client names are deliberately left out.</p>
+
+      <article class="case">
+        <header>
+          <h3>Multi-region deployment enablement</h3>
+          <p class="tags"><span>Azure</span><span>Kubernetes</span><span>Networking</span><span>Data replication</span></p>
+        </header>
+        <dl>
+          <dt>Problem</dt><dd>A SaaS product needed to be deployable across more than one region.</dd>
+          <dt>Approach</dt><dd>Architected and led the initiative across infrastructure, networking and data replication design.</dd>
+          <dt>Result</dt><dd>Multi-region deployment enablement delivered for the product.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <header>
+          <h3>One set of Terraform modules, many products</h3>
+          <p class="tags"><span>Terraform</span><span>IaC</span><span>Standardisation</span></p>
+        </header>
+        <dl>
+          <dt>Problem</dt><dd>Each product was rebuilding similar infrastructure modules, which multiplied effort and caused configuration drift.</dd>
+          <dt>Approach</dt><dd>Built a common, reusable standard-module library shared across products, so new environments are composed rather than rewritten.</dd>
+          <dt>Result</dt><dd>Less duplicated module code and more consistent environments across products.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <header>
+          <h3>Reducing platform cost</h3>
+          <p class="tags"><span>FinOps</span><span>Goldilocks</span><span>KubeCost</span><span>Envoy Gateway</span><span>Cloudflare Tunnel</span></p>
+        </header>
+        <dl>
+          <dt>Problem</dt><dd>Platform cost needed continuous control as clusters, workloads and environments grew.</dd>
+          <dt>Approach</dt>
+          <dd>
+            <ul>
+              <li>Regular team cost reviews, with pod and node right-sizing driven by utilisation data (Goldilocks, KubeCost).</li>
+              <li>Moved high-write workloads from Blob Storage to File Share and Table Storage to avoid excessive write-operation charges.</li>
+              <li>Replaced Azure Application Gateway with Cloudflare Tunnel and Envoy Gateway for two of the three products.</li>
+              <li>Migrated node pools to a newer, more cost-efficient VM SKU family.</li>
+            </ul>
+          </dd>
+          <dt>Result</dt><dd>Lower cost and an improved security posture, with the Envoy and Cloudflare pattern now running in production.</dd>
+        </dl>
+      </article>
+
+      <article class="case">
+        <header>
+          <h3>Centralised identity and pen-test hardening</h3>
+          <p class="tags"><span>Keycloak</span><span>OIDC</span><span>SAML</span><span>RBAC</span></p>
+        </header>
+        <dl>
+          <dt>Problem</dt><dd>Multiple client environments needed single sign-on with each client's own identity provider.</dd>
+          <dt>Approach</dt><dd>Designed and administered a Keycloak-based identity layer federating external IdPs over OIDC and SAML, then ran a hardening initiative driven by external penetration-test findings.</dd>
+          <dt>Result</dt><dd>One consistent identity model across environments, hardened against the findings from independent testing.</dd>
+        </dl>
+      </article>
+    </section>
+
+    <section class="wrap" id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">Oct 2022 – Present</div>
+          <div class="what">
+            <h3>Principal DevOps Engineer, Platform Engineering Lead</h3>
+            <p class="org">Optym · Bengaluru</p>
+            <p>Promoted to Principal in 2025. Lead platform and DevOps engineering across three multi-tenant SaaS products: 11 AKS clusters, security posture, reliability, client onboarding and incident response. Mentor two engineers.</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2019 – 2022</div>
+          <div class="what">
+            <h3>Cloud Engineer</h3>
+            <p class="org">Brainscale · Bengaluru</p>
+            <p>Built an Azure Landing Zone with Terraform in a hub-and-spoke model, managed six application environments, administered AKS and remediated Azure Advisor security findings.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="two">
+        <div>
+          <h3 class="small">Certifications</h3>
+          <ul class="plain">
+            <li>Certified Kubernetes Administrator (CKA)</li>
+            <li>HashiCorp Certified: Terraform Associate</li>
+            <li>Microsoft AZ-303, AZ-400, AZ-104</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="small">Education</h3>
+          <ul class="plain">
+            <li>M.Sc. Artificial Intelligence and Machine Learning, Liverpool John Moores University (in progress)</li>
+            <li>B.E. Mechanical Engineering, Anna University</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" id="toolbox">
+      <h2>Toolbox</h2>
+      <div class="toolbox">
+        <div><h3 class="small">Platform</h3><p class="chips"><span>Azure</span><span>AKS</span><span>Kubernetes</span><span>Helm</span><span>Route 53</span></p></div>
+        <div><h3 class="small">IaC &amp; automation</h3><p class="chips"><span>Terraform</span><span>Azure DevOps</span><span>GitHub Actions</span><span>Bash</span><span>Python</span><span>PowerShell</span></p></div>
+        <div><h3 class="small">Security &amp; identity</h3><p class="chips"><span>Keycloak</span><span>OIDC</span><span>SAML</span><span>RBAC</span><span>WAF</span><span>Trivy</span><span>OWASP ZAP</span><span>Dependabot</span></p></div>
+        <div><h3 class="small">Reliability</h3><p class="chips"><span>Multi-region DR</span><span>CockroachDB</span><span>Datadog</span><span>Multi-tenancy</span></p></div>
+        <div><h3 class="small">Cost</h3><p class="chips"><span>Goldilocks</span><span>KubeCost</span><span>Azure Advisor</span><span>Envoy Gateway</span><span>Cloudflare Tunnel</span></p></div>
+      </div>
+    </section>
+
+    <section class="wrap" id="github">
+      <h2>On GitHub</h2>
+      <p class="section-lede">My day-to-day work lives in private repositories, so this list is intentionally short. I'm adding sanitised, reusable examples over time.</p>
+      <ul class="repos">
+        <li>
+          <a href="https://github.com/asmarun/Azure-terraform-scripts" rel="noopener">Azure-terraform-scripts</a>
+          <span class="lang">HCL</span>
+          <p>Terraform for a range of Azure services.</p>
+        </li>
+        <li>
+          <a href="https://github.com/asmarun/100DaysOfPython" rel="noopener">100DaysOfPython</a>
+          <span class="lang">Python</span>
+          <p>Projects from the 100 Days of Python course.</p>
+        </li>
+      </ul>
+      <p><a href="https://github.com/asmarun" rel="me noopener">See the full profile →</a></p>
+    </section>
+
+    <section class="wrap" id="contact">
+      <h2>Get in touch</h2>
+      <p class="section-lede">I'm open to Staff and Principal platform, SRE and DevOps roles with a clear focus area. The quickest way to reach me is LinkedIn.</p>
+      <p class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">Message on LinkedIn</a>
+        <a class="btn" id="email-btn-2" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="noopener">Email</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© <span id="year">2026</span> Arun Prasath · Built with plain HTML and CSS on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
