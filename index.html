@@ -10,6 +10,7 @@
   <meta property="og:description" content="Platform engineering for multi-tenant SaaS: Kubernetes, identity, reliability, security and automation.">
   <meta property="og:type" content="website">
   <meta name="theme-color" content="#0f172a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f766e'/%3E%3Ctext x='32' y='43' font-family='sans-serif' font-size='28' font-weight='700' text-anchor='middle' fill='white'%3EAP%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -34,14 +35,37 @@
 
   <main id="main">
     <section class="hero wrap" id="top">
-      <p class="eyebrow">Bengaluru, India</p>
-      <h1>Principal DevOps Engineer<br><span class="muted">leading platform engineering for multi-tenant SaaS.</span></h1>
-      <p class="lede">I build and run the platform layer that product teams ship on: Kubernetes at scale, identity, security, disaster recovery, infrastructure-as-code and cost. Seven-plus years in cloud infrastructure, currently leading a small platform team and mentoring two engineers.</p>
-      <p class="cta">
-        <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/asmarun" rel="me noopener">GitHub</a>
-        <a class="btn" id="email-btn" href="#contact">Email</a>
-      </p>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Bengaluru, India</p>
+          <h1>Principal DevOps Engineer<br><span class="muted">leading platform engineering for multi-tenant SaaS.</span></h1>
+          <p class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg><span>Star Award, May 2026</span></p>
+          <p class="lede">I build and run the platform layer that product teams ship on: Kubernetes at scale, identity, security, disaster recovery, infrastructure-as-code and cost. Seven-plus years in cloud infrastructure, currently leading a small platform team and mentoring two engineers.</p>
+          <p class="cta">
+            <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">LinkedIn <svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="btn" href="https://github.com/asmarun" rel="me noopener">GitHub <svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+            <a class="btn" id="email-btn" href="#contact"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a>
+          </p>
+        </div>
+        <figure class="hero-art">
+          <svg viewBox="0 0 360 310" role="img" aria-label="Diagram: three products sit on a platform layer covering identity, security, reliability and automation, running on 11 AKS clusters">
+            <g class="d-line"><path d="M60 64v32M180 64v32M300 64v32"/></g>
+            <rect class="d-box" x="10" y="10" width="100" height="54" rx="10"/><text class="d-t" x="60" y="42" text-anchor="middle">Product A</text>
+            <rect class="d-box" x="130" y="10" width="100" height="54" rx="10"/><text class="d-t" x="180" y="42" text-anchor="middle">Product B</text>
+            <rect class="d-box" x="250" y="10" width="100" height="54" rx="10"/><text class="d-t" x="300" y="42" text-anchor="middle">Product C</text>
+            <rect class="d-acc" x="10" y="96" width="340" height="104" rx="14"/>
+            <text class="d-m" x="24" y="118">PLATFORM LAYER</text>
+            <rect class="d-box" x="24" y="128" width="148" height="28" rx="8"/><text class="d-t" x="98" y="146" text-anchor="middle">Identity &amp; security</text>
+            <rect class="d-box" x="188" y="128" width="148" height="28" rx="8"/><text class="d-t" x="262" y="146" text-anchor="middle">Reliability &amp; DR</text>
+            <rect class="d-box" x="24" y="162" width="148" height="28" rx="8"/><text class="d-t" x="98" y="180" text-anchor="middle">IaC &amp; automation</text>
+            <rect class="d-box" x="188" y="162" width="148" height="28" rx="8"/><text class="d-t" x="262" y="180" text-anchor="middle">Cost &amp; governance</text>
+            <g class="d-line"><path d="M180 200v22"/></g>
+            <rect class="d-box" x="10" y="222" width="340" height="78" rx="14"/>
+            <text class="d-m" x="24" y="244">11 AKS CLUSTERS · 2 REGIONS</text>
+            <g class="d-dot"><circle cx="34" cy="272" r="9"/><circle cx="62" cy="272" r="9"/><circle cx="90" cy="272" r="9"/><circle cx="118" cy="272" r="9"/><circle cx="146" cy="272" r="9"/><circle cx="174" cy="272" r="9"/><circle cx="202" cy="272" r="9"/><circle cx="230" cy="272" r="9"/><circle cx="258" cy="272" r="9"/><circle cx="286" cy="272" r="9"/><circle cx="314" cy="272" r="9"/></g>
+          </svg>
+        </figure>
+      </div>
 
       <dl class="stats" aria-label="Platform scale">
         <div><dt>AKS clusters</dt><dd>11</dd></div>
@@ -54,29 +78,35 @@
 
     <section class="wrap" id="focus">
       <h2>Where I go deep</h2>
-      <p class="section-lede">Five pillars I own end to end. Each one is something I've built, operated and improved, not just configured.</p>
+      <p class="section-lede">Six areas I own end to end. Each one is something I've built, operated and improved, not just configured.</p>
       <div class="grid">
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></svg></span>
           <h3>Kubernetes platform</h3>
           <p>Operating a fleet of AKS clusters across products and regions, with phased, low-downtime version upgrades and incident response as the technical lead.</p>
         </article>
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.3 8-8 9-4.7-1-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span>
           <h3>Identity &amp; security</h3>
           <p>Keycloak-based centralised identity with OIDC and SAML federation, pen-test driven hardening, WAF, image scanning and dependency vulnerability management in CI.</p>
         </article>
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l3-7 4 14 3-7h4"/></svg></span>
           <h3>Reliability &amp; DR</h3>
           <p>Multi-region deployments, multi-tenant DR, distributed SQL (CockroachDB) in production, and observability with Datadog.</p>
         </article>
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></span>
           <h3>IaC &amp; automation</h3>
           <p>Terraform with shared, reusable modules across products; Azure DevOps and GitHub Actions pipelines; repeatable environment provisioning for new clients.</p>
         </article>
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l6 6 4-4 8 8"/><path d="M15 17h6v-6"/></svg></span>
           <h3>Cost optimisation</h3>
           <p>A recurring cost-review practice, utilisation-based right-sizing and storage and ingress redesign that reduced spend.</p>
         </article>
         <article class="card">
+          <span class="ico-wrap"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="12" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M9 14l2 2 4-4"/></svg></span>
           <h3>Governance</h3>
           <p>Recurring RBAC and access reviews across cloud, source control, observability, code quality, Kubernetes and identity platforms, plus annual security audit cycles.</p>
         </article>
@@ -92,6 +122,16 @@
           <h3>Multi-region deployment enablement</h3>
           <p class="tags"><span>Azure</span><span>Kubernetes</span><span>Networking</span><span>Data replication</span></p>
         </header>
+        <figure class="diagram"><svg viewBox="0 0 320 160" role="img" aria-label="Diagram: users reach two regions, each running clusters, with data replicated between them">
+              <rect class="d-box" x="110" y="6" width="100" height="26" rx="13"/><text class="d-t" x="160" y="23" text-anchor="middle">Users</text>
+              <g class="d-line"><path d="M140 32L75 66M180 32L245 66"/></g>
+              <rect class="d-acc" x="10" y="66" width="130" height="86" rx="12"/><text class="d-m" x="22" y="84">REGION A</text>
+              <rect class="d-box" x="22" y="96" width="32" height="40" rx="6"/><rect class="d-box" x="62" y="96" width="32" height="40" rx="6"/><rect class="d-box" x="102" y="96" width="26" height="40" rx="6"/>
+              <rect class="d-acc" x="180" y="66" width="130" height="86" rx="12"/><text class="d-m" x="192" y="84">REGION B</text>
+              <rect class="d-box" x="192" y="96" width="32" height="40" rx="6"/><rect class="d-box" x="232" y="96" width="32" height="40" rx="6"/><rect class="d-box" x="272" y="96" width="26" height="40" rx="6"/>
+              <g class="d-line d-arrow"><path d="M142 110h36M142 126h36"/></g>
+              <text class="d-m" x="160" y="104" text-anchor="middle">sync</text>
+            </svg></figure>
         <dl>
           <dt>Problem</dt><dd>A SaaS product needed to be deployable across more than one region.</dd>
           <dt>Approach</dt><dd>Architected and led the initiative across infrastructure, networking and data replication design.</dd>
@@ -104,6 +144,13 @@
           <h3>One set of Terraform modules, many products</h3>
           <p class="tags"><span>Terraform</span><span>IaC</span><span>Standardisation</span></p>
         </header>
+        <figure class="diagram"><svg viewBox="0 0 320 160" role="img" aria-label="Diagram: one shared module library feeding three products">
+              <rect class="d-acc" x="50" y="8" width="220" height="44" rx="12"/><text class="d-t" x="160" y="27" text-anchor="middle">Shared Terraform modules</text><text class="d-m" x="160" y="42" text-anchor="middle">one standard, reused</text>
+              <g class="d-line"><path d="M110 52v28M160 52v28M210 52v28M110 80H55v32M160 80v32M210 80h55v32"/></g>
+              <rect class="d-box" x="10" y="112" width="90" height="40" rx="10"/><text class="d-t" x="55" y="136" text-anchor="middle">Product A</text>
+              <rect class="d-box" x="115" y="112" width="90" height="40" rx="10"/><text class="d-t" x="160" y="136" text-anchor="middle">Product B</text>
+              <rect class="d-box" x="220" y="112" width="90" height="40" rx="10"/><text class="d-t" x="265" y="136" text-anchor="middle">Product C</text>
+            </svg></figure>
         <dl>
           <dt>Problem</dt><dd>Each product was rebuilding similar infrastructure modules, which multiplied effort and caused configuration drift.</dd>
           <dt>Approach</dt><dd>Built a common, reusable standard-module library shared across products, so new environments are composed rather than rewritten.</dd>
@@ -116,6 +163,14 @@
           <h3>Reducing platform cost</h3>
           <p class="tags"><span>FinOps</span><span>Goldilocks</span><span>KubeCost</span><span>Envoy Gateway</span><span>Cloudflare Tunnel</span></p>
         </header>
+        <figure class="diagram"><svg viewBox="0 0 320 160" role="img" aria-label="Diagram: a cost loop of review, right-size, then redesign storage and ingress">
+              <rect class="d-box" x="8" y="40" width="88" height="56" rx="12"/><text class="d-t" x="52" y="64" text-anchor="middle">Review</text><text class="d-m" x="52" y="80" text-anchor="middle">team cadence</text>
+              <rect class="d-acc" x="116" y="40" width="88" height="56" rx="12"/><text class="d-t" x="160" y="64" text-anchor="middle">Right-size</text><text class="d-m" x="160" y="80" text-anchor="middle">pods and nodes</text>
+              <rect class="d-box" x="224" y="40" width="88" height="56" rx="12"/><text class="d-t" x="268" y="64" text-anchor="middle">Redesign</text><text class="d-m" x="268" y="80" text-anchor="middle">storage, ingress</text>
+              <g class="d-line d-arrow"><path d="M96 68h20M204 68h20"/></g>
+              <g class="d-line"><path d="M268 96v34H52V96"/></g>
+              <text class="d-m" x="160" y="148" text-anchor="middle">repeat on a regular cadence</text>
+            </svg></figure>
         <dl>
           <dt>Problem</dt><dd>Platform cost needed continuous control as clusters, workloads and environments grew.</dd>
           <dt>Approach</dt>
@@ -136,6 +191,17 @@
           <h3>Centralised identity and pen-test hardening</h3>
           <p class="tags"><span>Keycloak</span><span>OIDC</span><span>SAML</span><span>RBAC</span></p>
         </header>
+        <figure class="diagram"><svg viewBox="0 0 320 160" role="img" aria-label="Diagram: external identity providers federate into a central Keycloak, which signs users in to applications">
+              <rect class="d-box" x="8" y="14" width="76" height="30" rx="8"/><text class="d-t" x="46" y="33" text-anchor="middle">IdP 1</text>
+              <rect class="d-box" x="8" y="65" width="76" height="30" rx="8"/><text class="d-t" x="46" y="84" text-anchor="middle">IdP 2</text>
+              <rect class="d-box" x="8" y="116" width="76" height="30" rx="8"/><text class="d-t" x="46" y="135" text-anchor="middle">IdP 3</text>
+              <rect class="d-acc" x="120" y="46" width="80" height="68" rx="14"/><text class="d-t" x="160" y="76" text-anchor="middle">Keycloak</text><text class="d-m" x="160" y="92" text-anchor="middle">SSO</text>
+              <rect class="d-box" x="236" y="14" width="76" height="30" rx="8"/><text class="d-t" x="274" y="33" text-anchor="middle">App</text>
+              <rect class="d-box" x="236" y="65" width="76" height="30" rx="8"/><text class="d-t" x="274" y="84" text-anchor="middle">App</text>
+              <rect class="d-box" x="236" y="116" width="76" height="30" rx="8"/><text class="d-t" x="274" y="135" text-anchor="middle">App</text>
+              <g class="d-line"><path d="M84 29L120 70M84 80h36M84 131L120 90M200 70L236 29M200 80h36M200 90L236 131"/></g>
+              <text class="d-m" x="160" y="36" text-anchor="middle">OIDC / SAML</text>
+            </svg></figure>
         <dl>
           <dt>Problem</dt><dd>Multiple client environments needed single sign-on with each client's own identity provider.</dd>
           <dt>Approach</dt><dd>Designed and administered a Keycloak-based identity layer federating external IdPs over OIDC and SAML, then ran a hardening initiative driven by external penetration-test findings.</dd>
@@ -152,7 +218,7 @@
           <div class="what">
             <h3>Principal DevOps Engineer, Platform Engineering Lead</h3>
             <p class="org">Optym · Bengaluru</p>
-            <p>Promoted to Principal in 2025. Lead platform and DevOps engineering across three multi-tenant SaaS products: 11 AKS clusters, security posture, reliability, client onboarding and incident response. Mentor two engineers.</p>
+            <p>Promoted to Principal in 2025 and recipient of the Star Award in May 2026. Lead platform and DevOps engineering across three multi-tenant SaaS products: 11 AKS clusters, security posture, reliability, client onboarding and incident response. Mentor two engineers.</p>
           </div>
         </li>
         <li>
@@ -165,9 +231,16 @@
         </li>
       </ol>
 
-      <div class="two">
+      <div class="three">
         <div>
-          <h3 class="small">Certifications</h3>
+          <h3 class="small"><svg class="ico sm star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></svg> Recognition</h3>
+          <ul class="plain">
+            <li>Star Award, Optym (May 2026)</li>
+            <li>Promoted to Principal DevOps Engineer (2025)</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="small"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 21l5-3 5 3-1.5-7.5"/></svg> Certifications</h3>
           <ul class="plain">
             <li>Certified Kubernetes Administrator (CKA)</li>
             <li>HashiCorp Certified: Terraform Associate</li>
@@ -175,7 +248,7 @@
           </ul>
         </div>
         <div>
-          <h3 class="small">Education</h3>
+          <h3 class="small"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-4.5"/></svg> Education</h3>
           <ul class="plain">
             <li>M.Sc. Artificial Intelligence and Machine Learning, Liverpool John Moores University (in progress)</li>
             <li>B.E. Mechanical Engineering, Anna University</li>
@@ -217,8 +290,8 @@
       <h2>Get in touch</h2>
       <p class="section-lede">I'm open to Staff and Principal platform, SRE and DevOps roles with a clear focus area. The quickest way to reach me is LinkedIn.</p>
       <p class="cta">
-        <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">Message on LinkedIn</a>
-        <a class="btn" id="email-btn-2" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="noopener">Email</a>
+        <a class="btn primary" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="me noopener">Message on LinkedIn <svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+        <a class="btn" id="email-btn-2" href="https://www.linkedin.com/in/arun-prasath-18b9a7181" rel="noopener"><svg class="ico sm" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email</a>
       </p>
     </section>
   </main>
